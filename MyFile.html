@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANOJ PULI - Frontend Developer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#"
+                class="text-2xl font-bold text-indigo-600 hover:text-indigo-800 transition-colors duration-300">MANOJ
+                PULI</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about"
+                    class="text-gray-600 hover:text-indigo-600 font-medium transition-colors duration-300">About</a>
+                <a href="#skills"
+                    class="text-gray-600 hover:text-indigo-600 font-medium transition-colors duration-300">Skills</a>
+                <a href="#experience"
+                    class="text-gray-600 hover:text-indigo-600 font-medium transition-colors duration-300">Experience</a>
+                <a href="#education"
+                    class="text-gray-600 hover:text-indigo-600 font-medium transition-colors duration-300">Education</a>
+                <a href="#contact"
+                    class="text-gray-600 hover:text-indigo-600 font-medium transition-colors duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-inner">
+            <a href="#about"
+                class="block px-6 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-300">About</a>
+            <a href="#skills"
+                class="block px-6 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-300">Skills</a>
+            <a href="#experience"
+                class="block px-6 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-300">Experience</a>
+            <a href="#education"
+                class="block px-6 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-300">Education</a>
+            <a href="#contact"
+                class="block px-6 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-300">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="about"
+        class="relative bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-24 md:py-32 mt-16 overflow-hidden">
+        <div class="absolute inset-0 bg-pattern opacity-10"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+                <div
+                    class="w-32 h-32 md:w-40 md:h-40 bg-white rounded-full flex items-center justify-center shadow-lg transform transition-transform duration-500 hover:scale-105">
+                    <!-- Placeholder for profile picture or initials -->
+                    <span class="text-indigo-600 text-6xl font-bold">
+                        <img src="..\WhatsApp Image 2024-05-01 at 19.35.53_91e923f1.jpg" />
+                    </span>
+                </div>
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                        MANOJ PULI
+                    </h1>
+                    <p class="text-xl md:text-2xl font-light mb-6">
+                        Experienced <span class="font-semibold">Frontend Developer</span> with 2.4 years of experience
+                    </p>
+                    <p class="text-lg mb-8 max-w-2xl mx-auto md:mx-0">
+                        Passionate about crafting intuitive and visually appealing web solutions that drive engagement
+                        and efficiency.
+                    </p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="mailto:pulimanoj41@gmail.com"
+                            class="bg-white text-indigo-600 hover:bg-indigo-100 py-3 px-6 rounded-full font-semibold shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                            Email Me
+                        </a>
+                        <a href="#contact"
+                            class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-indigo-600 py-3 px-6 rounded-full font-semibold shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                            Contact Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me / Profile Summary Section -->
+    <section class="py-16 md:py-24 bg-white" id="about-summary">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                        Experienced Frontend Developer with 2.4 years of experience in building scalable web
+                        applications using modern JavaScript frameworks. Skilled in developing responsive,
+                        high-performance user interfaces, optimizing application performance, and ensuring seamless user
+                        experiences. Passionate about crafting intuitive and visually appealing web solutions that drive
+                        engagement and efficiency.
+                    </p>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Professional Highlights:</h3>
+                    <ul class="list-disc list-inside space-y-3 text-gray-700 text-lg">
+                        <li><span class="font-semibold">Responsive UI Development:</span> Designed and developed
+                            responsive, cross-browser compatible interfaces using modern JavaScript frameworks to
+                            enhance user experience.</li>
+                        <li><span class="font-semibold">State Management:</span> Implemented efficient state management
+                            systems to optimize application performance and maintain seamless data flow.</li>
+                        <li><span class="font-semibold">API Integration:</span> Integrated frontend applications with
+                            cloud-based backends and RESTful APIs for dynamic and scalable solutions.</li>
+                        <li><span class="font-semibold">Testing & Code Quality:</span> Improved code reliability by
+                            implementing automated testing, increasing code coverage and reducing bugs.</li>
+                        <li><span class="font-semibold">Performance Optimization:</span> Optimized frontend performance
+                            through efficient rendering techniques, reducing load times and enhancing interactivity.
+                        </li>
+                        <li><span class="font-semibold">Team Collaboration:</span> Worked closely with cross-functional
+                            Agile teams to deliver high-quality user-centric web applications.</li>
+                    </ul>
+                </div>
+                <div class="hidden md:block">
+                    <img src="https://placehold.co/600x400/e0e7ff/4f46e5?text=Web+Development"
+                        alt="Web Development Illustration"
+                        class="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="py-16 md:py-24 bg-gray-50" id="skills">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend Skills -->
+                <div
+                    class="bg-white rounded-lg shadow-lg p-8 transform transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">Frontend</h3>
+                    <ul class="space-y-3 text-gray-700 text-lg">
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>React.JS</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>Vue.JS</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>JavaScript
+                            (ES6+)</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>HTML5 & CSS3
+                        </li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>Responsive
+                            Design</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>React Router
+                        </li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>Component-Based
+                            Architecture</li>
+                    </ul>
+                </div>
+                <!-- Tools & Version Control -->
+                <div
+                    class="bg-white rounded-lg shadow-lg p-8 transform transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">Tools & Version Control</h3>
+                    <ul class="space-y-3 text-gray-700 text-lg">
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>Git</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>GitHub</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>GitLab</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>Postman</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>VS Code</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>Docker</li>
+                    </ul>
+                </div>
+                <!-- Practices -->
+                <div
+                    class="bg-white rounded-lg shadow-lg p-8 transform transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">Practices & Concepts</h3>
+                    <ul class="space-y-3 text-gray-700 text-lg">
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>Agile
+                            Methodologies</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>REST API
+                            Integration</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>JWT
+                            Authentication</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>Infrastructure
+                            as Code (IaC)</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>Cross-Browser
+                            Compatibility</li>
+                        <li class="flex items-center"><span class="mr-2 text-indigo-500">&#10003;</span>AWS (Conceptual)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section class="py-16 md:py-24 bg-white" id="experience">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <!-- Project 1: Phizzle Lens -->
+            <div
+                class="bg-gray-50 rounded-lg shadow-lg p-8 mb-12 border-l-4 border-indigo-500 transform transition-transform duration-300 hover:scale-[1.01]">
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Phizzle Lens</h3>
+                <p class="text-lg text-gray-600 mb-4">Build-Bot Technologies Pvt Ltd – March 2022 – March 2023</p>
+                <p class="text-md text-gray-700 mb-4"><span class="font-semibold">Technologies:</span> Vue.js, React.js,
+                    JavaScript, Docker, GitHub, AWS</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Developed and maintained scalable frontend applications using React.js and Vue.js with reusable
+                        UI Components and responsive layouts.</li>
+                    <li>Designed interactive dashboards for real-time device monitoring with seamless API integration.
+                    </li>
+                    <li>Enabled horizontal scaling supporting 10x user traffic with consistent performance and zero
+                        downtime.</li>
+                    <li>Set up alerting monitoring systems, reducing MTTR from 3 hours to 30 minutes.</li>
+                </ul>
+            </div>
+
+            <!-- Project 2: Cloud-Doctor- AWS Monitoring Tools -->
+            <div
+                class="bg-gray-50 rounded-lg shadow-lg p-8 mb-12 border-l-4 border-indigo-500 transform transition-transform duration-300 hover:scale-[1.01]">
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Cloud-Doctor - AWS Monitoring Tools</h3>
+                <p class="text-lg text-gray-600 mb-4">Build-Bot Technologies Pvt Ltd – March 2022 – March 2023</p>
+                <p class="text-md text-gray-700 mb-4"><span class="font-semibold">Technologies:</span> React.js, Vue.js,
+                    JavaScript, HTML, CSS, AWS</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Developed reusable and responsive UI components using React.js to monitor AWS Cloud resources
+                        and visualize infrastructure health.</li>
+                    <li>Implemented JWT-based authentication to secure user access and manage role-based visibility.
+                    </li>
+                    <li>Integrated real-time monitoring data from AWS using REST APIs, enabling users to troubleshoot
+                        system issues faster.</li>
+                    <li>Optimized UI performance by lazy-loading components and minimizing re-render, resulting in a 40%
+                        faster page load time.</li>
+                    <li>Collaborated with cross-functional teams to ensure the application aligned with business goals
+                        and security compliance standards.</li>
+                </ul>
+            </div>
+
+            <!-- Project 3: Digital Communication Platform -->
+            <div
+                class="bg-gray-50 rounded-lg shadow-lg p-8 mb-12 border-l-4 border-indigo-500 transform transition-transform duration-300 hover:scale-[1.01]">
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Digital Communication Platform</h3>
+                <p class="text-lg text-gray-600 mb-4">SYS WAVE TECHNOLOGIES PVT LTD – January 2024 – March 2024</p>
+                <p class="text-md text-gray-700 mb-4"><span class="font-semibold">Technologies:</span> React.js,
+                    JavaScript, HTML, CSS, Ant-Design, AWS</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Developed frontend modules and interfaces for a secure communication platform using React.js.
+                    </li>
+                    <li>Collaborated with backend teams for seamless REST API integration and optimized real-time data
+                        rendering.</li>
+                    <li>Implemented security best practices, achieving zero critical vulnerabilities in assessments.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Project 4: Expense Management System -->
+            <div
+                class="bg-gray-50 rounded-lg shadow-lg p-8 mb-12 border-l-4 border-indigo-500 transform transition-transform duration-300 hover:scale-[1.01]">
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Expense Management System</h3>
+                <p class="text-lg text-gray-600 mb-4">Freelancer – April 2024 - April 2025</p>
+                <p class="text-md text-gray-700 mb-4"><span class="font-semibold">Technologies:</span> React.js, Vue.js,
+                    JavaScript, HTML, CSS, AWS, Docker</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Developed UI for managing financial transactions and user dashboards using React.JS and
+                        AWS-hosted APIs.</li>
+                    <li>Enabled auto-scaling on AWS infrastructure, ensuring uninterrupted performance during 3x user
+                        load spikes.</li>
+                    <li>Created a Docker Compose-based local environment, cutting developer onboarding time from 2 days
+                        to 2 hours.</li>
+                    <li>Integrated AWS Lambda for backend processing, enhancing scalability and reducing server load.
+                    </li>
+                    <li>Conducted vulnerability assessments achieving zero issues through security best practices.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-16 md:py-24 bg-gray-50" id="education">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Education</h2>
+            <div
+                class="bg-white rounded-lg shadow-lg p-8 transform transition-transform duration-300 hover:scale-[1.01]">
+                <h3 class="text-2xl font-bold text-indigo-600 mb-2">Bachelor of Computer Science</h3>
+                <p class="text-lg text-gray-700 mb-1">Krishna University, Machilipatnam</p>
+                <p class="text-md text-gray-600">Completed in 2020</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 md:py-24 bg-indigo-700 text-white" id="contact">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="section-title text-white after:bg-white">Get In Touch</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                I'm always open to new opportunities and collaborations. Feel free to reach out!
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12">
+                <div class="flex items-center space-x-3">
+                    <svg class="w-8 h-8 text-indigo-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 4v7a2 2 0 002 2h14a2 2 0 002-2v-7m-18 0l-2 2">
+                        </path>
+                    </svg>
+                    <a href="mailto:pulimanoj41@gmail.com"
+                        class="text-lg font-medium hover:underline">pulimanoj41@gmail.com</a>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <svg class="w-8 h-8 text-indigo-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                        </path>
+                    </svg>
+                    <span class="text-lg font-medium">+91-9581226001</span>
+                </div>
+                <!-- LinkedIn Account -->
+                <div class="flex items-center space-x-3">
+                    <svg class="w-8 h-8 text-indigo-200" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                    <a href="https://www.linkedin.com/in/manoj-puli1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6QYXYIiyQEqyN%2BhxUfgdFA%3D%3D"
+                        target="_blank" rel="noopener noreferrer" class="text-lg font-medium hover:underline">LinkedIn
+                        Profile</a>
+                </div>
+                <!-- GitHub Account -->
+                <div class="flex items-center space-x-3">
+                    <svg class="w-8 h-8 text-indigo-200" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.11.82-.26.82-.577v-2.234c-3.338.725-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.755-1.333-1.755-1.087-.745.083-.73.083-.73 1.205.086 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.49.998.108-.775.418-1.305.762-1.605-2.665-.3-5.464-1.332-5.464-5.93 0-1.31.465-2.382 1.235-3.22-.12-.3-.535-1.52.117-3.176 0 0 1.007-.322 3.301 1.23.957-.266 1.983-.4 3.003-.404 1.02.004 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.653 1.656.238 2.876.118 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.804 5.62-5.475 5.92.43.37.817 1.102.817 2.22v3.293c0 .319.217.69.825.577C20.565 21.8 24 17.302 24 12c0-6.627-5.373-12-12-12z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <a href="https://github.com/manojpuli05" target="_blank" rel="noopener noreferrer"
+                        class="text-lg font-medium hover:underline">GitHub Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2025 MANOJ PULI. All rights reserved.</p>
+            <!-- <p class="mt-2">Designed with ❤️ using HTML, Tailwind CSS & JavaScript</p> -->
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
